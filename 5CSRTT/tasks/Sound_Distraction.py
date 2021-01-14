@@ -2,9 +2,9 @@
 light_on for a defined stimulus duration (state_dur)+ extra time (limited hold where cue light turned off, and mouse
 still get chance to make choice) correct poke leads to reward then iti or incorrect and omission leads to time out
 
-Correct response ==> reward ==> iti(sound prentation at random time)  ==> cue presentation
-Incorrect response ==> penalty (house light off) ==> iti(sound prentation at random time) ==> cue presentation
-omission (no response) ==> penalty (house light off) ==> iti(sound prentation at random time) ==> cue presentation
+Correct response ==> reward ==> iti(sound presentation at random time- btwn 0.5sec to 3.5sec)  ==> cue presentation
+Incorrect response ==> penalty (house light off) ==> iti(sound presentation at random time- btwn 0.5sec to 3.5sec) ==> cue presentation
+omission (no response) ==> penalty (house light off) ==> iti(sound presentation at random time- btwn 0.5sec to 3.5sec) ==> cue presentation
 
 Important readouts:
 Responses :- #Corrects, #Incorrects, #Omissions, #Prematures
@@ -189,8 +189,8 @@ def iti(event):
         v.dis_dur = x * ms
         print('iti_start_time')
         timed_goto_state('choice_task', v.ITI_dur)
-        set_timer('distraction_timer_on', v.dis_dur)
-        set_timer('distraction_timer_off', (v.dis_dur + 1000))
+        set_timer('distraction_timer_on', v.dis_dur) # when to start the sound 
+        set_timer('distraction_timer_off', (v.dis_dur + 1000)) # when to stop the sound 
     elif event == 'poke_1' \
             or event == 'poke_2' \
             or event == 'poke_3' \
