@@ -60,12 +60,12 @@ v.target = 0
 # states defines starts and ending of task file
 def run_start():
     set_timer('session_timer', v.session_duration)
-    hw.reward_port.SOL.on()
+    hw.reward_port.SOL.on() # turn on house light - we use reward port SOL to power house light
 
 
 def run_end():
     hw.off()
-    hw.reward_port.SOL.off()
+    hw.reward_port.SOL.off() # turn off house light - we use reward port SOL to power house light
 
 
 # initial state
