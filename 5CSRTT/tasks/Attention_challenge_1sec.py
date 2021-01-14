@@ -1,6 +1,6 @@
-"""This task is for 5-CSRTT, task starts with reward and trial starts by presenting one of the five-choice
-light_on for a defined stimulus duration (state_dur)+ extra time (limited hold where cue light turned off but still mouse
-still have chance to make choice) correct poke leads to reward then iti or incorrect and omission leads to time out
+"""This task file is for 5-CSRTT, task starts with reward and trial starts by presenting one of the five-choice
+light_on for a defined stimulus duration (state_dur)+ extra time (limited hold where cue light turned off, and mouse
+still get chance to make choice) correct poke leads to reward then iti or incorrect and omission leads to time out
 ***Similar to normal 5CSRTT except state_dur
 
 Correct response ==> reward ==> iti ==> cue presentation
