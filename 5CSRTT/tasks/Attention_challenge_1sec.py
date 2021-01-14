@@ -118,7 +118,7 @@ def choice_task(event):
             or event == 'poke_5' and v.target != 5:
         print('Incorrect_response') # the latency between cue presentation and incorrect response is incorrect lat
         goto_state('penalty')
-    # if event ( no respose) is same as target , considered as omission and go to penalty state
+    # if event is no respose, considered as omission and go to penalty state
     elif event == 'exit':
         hw.five_poke.poke_1.LED.off() # 5-choice hole_1 light off
         hw.five_poke.poke_2.LED.off() # 5-choice hole_2 light off
