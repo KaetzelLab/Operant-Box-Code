@@ -31,13 +31,13 @@ events = ['session_timer',
           'poke_3',  # light 3
           'poke_4',  # light 4
           'poke_5',  # light 5
-          'poke_6',  # reward receptacle in
-          'poke_6_out',  # reward receptacle out
-          'kill_port_lights',  # turn off five choice light and advance to limited hold(LH) stage
-          'kill_reward',  # turn off reward port light to reinforce to leave receptacle
-          'penalty_omission',  # timer to wait for response for defined period
+          'poke_6',                # reward receptacle in
+          'poke_6_out',            # reward receptacle out
+          'port_lights_dur',       # turn off five choice light and advance to limited hold(LH) stage
+          'reward_in_dur',         # turn off reward port light to reinforce to leave receptacle
+          'penalty_omission',      # timer to wait for response for defined period
           'distraction_timer_on',  # timer to present distraction sound on
-          'distraction_timer_off']  # timer to present distraction sound off
+          'distraction_timer_off'] # timer to present distraction sound off
 
 # initial state name (required by pyControl)
 
@@ -208,13 +208,13 @@ def all_states(event):
     if event == 'session_timer':
         print("Event Closing")
         stop_framework()
-    elif event == 'kill_port_lights':
+    elif event == 'port_lights_dur':
         hw.five_poke.poke_1.LED.off()
         hw.five_poke.poke_2.LED.off()
         hw.five_poke.poke_3.LED.off()
         hw.five_poke.poke_4.LED.off()
         hw.five_poke.poke_5.LED.off()
-    elif event == 'kill_reward':
+    elif event == 'reward_in_dur':
         hw.reward_port.LED.off()
     elif event == 'penalty_omission':
         print('omission')
