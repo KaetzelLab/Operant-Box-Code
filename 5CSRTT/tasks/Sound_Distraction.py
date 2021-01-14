@@ -2,9 +2,9 @@
 light_on for a defined stimulus duration (state_dur)+ extra time (limited hold where cue light turned off, and mouse
 still get chance to make choice) correct poke leads to reward then iti or incorrect and omission leads to time out
 
-Correct response ==> reward ==> iti(sound pprentation at random time)  ==> cue presentation
-Incorrect response ==> penalty (house light off) ==> iti(sound pprentation at random time) ==> cue presentation
-omission (no response) ==> penalty (house light off) ==> iti(sound pprentation at random time) ==> cue presentation
+Correct response ==> reward ==> iti(sound prentation at random time)  ==> cue presentation
+Incorrect response ==> penalty (house light off) ==> iti(sound prentation at random time) ==> cue presentation
+omission (no response) ==> penalty (house light off) ==> iti(sound prentation at random time) ==> cue presentation
 
 Important readouts:
 Responses :- #Corrects, #Incorrects, #Omissions, #Prematures
