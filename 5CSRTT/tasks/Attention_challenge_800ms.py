@@ -1,7 +1,6 @@
-"""This task file is for 5-CSRTT, task starts with reward and trial starts by presenting one of the five-choice
+"""Task file is for 5-CSRTT- task starts with reward and trial starts by presenting one of the five-choice
 light_on for a defined stimulus duration (state_dur)+ extra time (limited hold where cue light turned off, and mouse
 still get chance to make choice) correct poke leads to reward then iti or incorrect and omission leads to time out
-***Similar to normal 5CSRTT except state_dur
 
 Correct response ==> reward ==> iti ==> cue presentation
 
@@ -16,7 +15,7 @@ Latencies :-Reward lat., Premature lat., Correct lat.,
 # necessary imports to begin code
 from pyControl.utility import *
 import hardware_definition as hw
-import random
+
 
 # list of states
 states = ['start',
@@ -27,16 +26,16 @@ states = ['start',
 
 # list of events
 events = ['session_timer',
-          'poke_1',  # light 1
-          'poke_2',  # light 2
-          'poke_3',  # light 3
-          'poke_4',  # light 4
-          'poke_5',  # light 5
-          'poke_6',  # reward receptacle in
-          'poke_6_out',        # reward receptacle out
-          'kill_port_lights',  # turn off five choice light and advance to limited hold(LH) stage
-          'kill_reward',       # turn off reward port light to reinforce to leave receptacle
-          'penalty_omission']  # timer to wait for response for defined period
+          'poke_1',             # light 1
+          'poke_2',             # light 2
+          'poke_3',             # light 3
+          'poke_4',             # light 4
+          'poke_5',             # light 5
+          'poke_6',             # reward receptacle in
+          'poke_6_out',         # reward receptacle out
+          'port_lights_timer',  # turn off five choice light and advance to limited hold(LH) stage
+          'reward_in_timer',    # turn off reward port light to reinforce to leave receptacle
+          'penalty_omission']   # timer to wait for response for defined period
 
 # initial state name (required by pyControl)
 
@@ -45,7 +44,7 @@ initial_state = 'start'
 # variables needed
 
 # variables changes according to stages
-v.state_dur = 800* ms             # cue stimulus duration
+v.state_dur = 0.8 * second         # cue stimulus duration
 v.ITI_dur = 5 * second            # inter trial interval duration
 
 #constant variable for all stages
@@ -72,13 +71,13 @@ def run_end():
 # initial state
 def start(event):
     if event == 'entry':
-        hw.reward_port.LED.on()
-        hw.syringe_pump.backward(v.steps_rate, v.n_steps)
+        hw.reward_port.LED.on() # turn on reward port LED on
+        hw.syringe_pump.backward(v.steps_rate, v.n_steps) # beginning reward
     elif event == 'exit':
         hw.reward_port.LED.off()
-        disarm_timer('kill_reward')
+        disarm_timer('reward_in_timer')
     elif event == 'poke_6':
-        set_timer('kill_reward', v.reward_stim_dur)
+        set_timer('reward_in_timer', v.reward_stim_dur) 
     elif event == 'poke_6_out':
         print("ITI_duration:{} \n SD_duration:{}\n LH_duration:{}".format(v.ITI_dur, v.state_dur, v.LH_dur))
         goto_state('choice_task')
@@ -88,42 +87,46 @@ def start(event):
 def choice_task(event):
     if event == 'entry':
         print('Sample_state')
-        set_timer('kill_port_lights', v.state_dur)
+        set_timer('port_lights_timer', v.state_dur)
         set_timer('penalty_omission', (v.state_dur + v.LH_dur))
         v.target = random.randint(1, 5)
         print('v.target:{}'.format(v.target))
+        # randomly select int between 1-5 and variable referred as v.target and present cue light accordingly
         if v.target == 1:
-            hw.five_poke.poke_1.LED.on()
+            hw.five_poke.poke_1.LED.on() # 5-choice hole_1 light on
         elif v.target == 2:
-            hw.five_poke.poke_2.LED.on()
+            hw.five_poke.poke_2.LED.on() # 5-choice hole_2 light on
         elif v.target == 3:
-            hw.five_poke.poke_3.LED.on()
+            hw.five_poke.poke_3.LED.on() # 5-choice hole_3 light on
         elif v.target == 4:
-            hw.five_poke.poke_4.LED.on()
+            hw.five_poke.poke_4.LED.on() # 5-choice hole_4 light on
         elif v.target == 5:
-            hw.five_poke.poke_5.LED.on()
+            hw.five_poke.poke_5.LED.on() # 5-choice hole_5 light on
+    # if event (poke) is same as target , considered as correct response and go to reward state
     elif event == 'poke_1' and v.target == 1 \
             or event == 'poke_2' and v.target == 2 \
             or event == 'poke_3' and v.target == 3 \
             or event == 'poke_4' and v.target == 4 \
             or event == 'poke_5' and v.target == 5:
-        print('Correct_response')
+        print('Correct_response') # the latency between cue presentation and correct response is correct lat.
         goto_state('reward')
+    # if event (poke) is other than target , considered as incorrect response and go to penalty state
     elif event == 'poke_1' and v.target != 1 \
             or event == 'poke_2' and v.target != 2 \
             or event == 'poke_3' and v.target != 3 \
             or event == 'poke_4' and v.target != 4 \
             or event == 'poke_5' and v.target != 5:
-        print('Incorrect_response')
+        print('Incorrect_response') # the latency between cue presentation and incorrect response is incorrect lat
         goto_state('penalty')
+    # if event ( no respose) is same as target , considered as omission and go to penalty state
     elif event == 'exit':
-        hw.five_poke.poke_1.LED.off()
-        hw.five_poke.poke_2.LED.off()
-        hw.five_poke.poke_3.LED.off()
-        hw.five_poke.poke_4.LED.off()
-        hw.five_poke.poke_5.LED.off()
-        disarm_timer('kill_port_lights')
-        disarm_timer('penalty_omission')
+        hw.five_poke.poke_1.LED.off() # 5-choice hole_1 light off
+        hw.five_poke.poke_2.LED.off() # 5-choice hole_2 light off
+        hw.five_poke.poke_3.LED.off() # 5-choice hole_3 light off
+        hw.five_poke.poke_4.LED.off() # 5-choice hole_4 light off
+        hw.five_poke.poke_5.LED.off() # 5-choice hole_5 light off
+        disarm_timer('port_lights_timer') # clear timer for 5-Choice port lights
+        disarm_timer('penalty_omission') # clear timer for omission
 
 
 # reward state
@@ -132,11 +135,11 @@ def reward(event):
         hw.reward_port.LED.on()
     elif event == 'exit':
         hw.reward_port.LED.off()
-        disarm_timer('kill_reward')
+        disarm_timer('reward_in_timer')
     elif event == 'poke_6':
-        hw.syringe_pump.backward(v.steps_rate, v.n_steps)
-        print('Reward_taken')
-        set_timer('kill_reward', v.reward_stim_dur)
+        hw.syringe_pump.backward(v.steps_rate, v.n_steps) # Reward after correct resonse and poke into reward receptacle
+        print('Reward_taken')                             # the latency between correct and Reward_taken is Reward lat.
+        set_timer('reward_in_timer', v.reward_stim_dur)
     elif event == 'poke_6_out':
         goto_state('iti')
     elif event == 'poke_1' and v.target == 1 \
@@ -174,27 +177,28 @@ def iti(event):
             or event == 'poke_3' \
             or event == 'poke_4' \
             or event == 'poke_5':
-        print('Premature_response')
+        print('Premature_response') # the latency between iti_start_time and Premature_response is premature lat.
         goto_state('penalty')
 
 
-# catch-all state
+# state indipendent behavior
 def all_states(event):
     # When 'session_timer' event occurs stop framework to end session.
     if event == 'session_timer':
         print("Event Closing")
         stop_framework()
-    elif event == 'kill_port_lights':
+    elif event == 'port_lights_timer':
         hw.five_poke.poke_1.LED.off()
         hw.five_poke.poke_2.LED.off()
         hw.five_poke.poke_3.LED.off()
         hw.five_poke.poke_4.LED.off()
         hw.five_poke.poke_5.LED.off()
-    elif event == 'kill_reward':
+    elif event == 'reward_in_timer':
         hw.reward_port.LED.off()
     elif event == 'penalty_omission':
         print('omission')
         goto_state('penalty')
+    # all poke events at 5-choice - for counting 5_poke_entries
     elif event == 'poke_1' or event == 'poke_2' or event == 'poke_3' or event == 'poke_4' or event == 'poke_5':
         print('5_poke_entries')
     elif event == 'poke_6_out':
