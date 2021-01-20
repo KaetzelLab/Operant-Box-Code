@@ -19,6 +19,7 @@
 
 from pyControl.utility import *
 import hardware_definition as hw
+import random
 
 
 # list of states and events
