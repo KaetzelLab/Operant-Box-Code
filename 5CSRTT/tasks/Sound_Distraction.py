@@ -20,6 +20,7 @@
 
 from pyControl.utility import *
 import hardware_definition as hw
+import random
 
 
 # list of states and events
@@ -40,7 +41,10 @@ events = ['session_timer',      # timer to terminate session after defined time 
           'poke_6_out',         # reward receptacle out
           'port_lights_timer',  # turn off five choice light and advance to limited hold(LH) stage
           'reward_in_timer',    # turn off reward port light to reinforce to leave receptacle
-          'penalty_omission']   # timer to wait for response for defined period
+          'penalty_omission',      # timer to wait for response for defined period
+          'distraction_timer_on',  # timer to wait for for sound on
+          'distraction_timer_off'] # timer to wait for for sound off
+
 
 # initial state name (required by pyControl)
 initial_state = 'start'
