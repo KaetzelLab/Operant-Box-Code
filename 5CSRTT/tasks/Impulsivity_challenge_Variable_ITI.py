@@ -9,7 +9,7 @@
 # Responses :- number of Corrects, number of Incorrects, number of Omissions, number of Prematures
 # Latencies :-Reward lat., Premature lat., Correct lat.,
 
-#iti duration randomnly picked by programme
+# iti duration randomnly picked by programme from iti list
 # important note:- if reward port SOL not used and intended to use 'house_light = Digital_output(pin=board.port_5.POW_A)'
 #  ....then this line of code 'hw.reward_port.SOL.on()'  need to modify as 'hw.house_light.on()' to control HouseLight 
 
@@ -20,6 +20,7 @@
 
 from pyControl.utility import *
 import hardware_definition as hw
+import random
 
 
 # list of states and events
@@ -47,8 +48,8 @@ initial_state = 'start'
 
 # variables
 # variables changes according to stages
-
-v.state_dur = 20 * second         # cue stimulus duration
+iti_list    = [7, 9, 11, 13] # iti list values represents in sec, can be changed accornding to experiment
+v.state_dur = 20 * second    # cue stimulus duration
 
 
 #constant variable for all stages
