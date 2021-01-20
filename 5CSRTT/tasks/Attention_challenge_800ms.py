@@ -9,6 +9,7 @@
 # Responses :- number of Corrects, number of Incorrects, number of Omissions, number of Prematures
 # Latencies :-Reward lat., Premature lat., Correct lat.,
 
+# shorter cue stim duration 
 # important note:- if reward port SOL not used and intended to use 'house_light = Digital_output(pin=board.port_5.POW_A)'
 #  ....then this line of code 'hw.reward_port.SOL.on()'  need to modify as 'hw.house_light.on()' to control HouseLight 
 
@@ -19,6 +20,7 @@
 
 from pyControl.utility import *
 import hardware_definition as hw
+import random
 
 
 # list of states and events
