@@ -1,5 +1,5 @@
 #--------------------------5-CSRTT Protocol----------------------
-
+# This task file can be used for any 5CSRTT task by changing variables mentioned below
 # Task file for 5-CSRTT task which can be used for training stages, and challanges by adjusting task variables as described below. 
 
 # One of the five_poke_LED turn on randomly (cue presentation) and subject has to make response with in the specified period of time(SD+LH)
