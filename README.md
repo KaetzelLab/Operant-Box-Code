@@ -48,9 +48,9 @@ Download the code zip or git clone from the link https://github.com/KaetzelLab/O
       
        - Ruleshift  # Contains task protocol file for rule shift      
 
-       - DNMTP      # Contains task protocol file for Delayed non-match to posiotions test      
+       - DNMTP      # Contains task protocol file for Delayed non-match to position test      
 	    
-       - DMTP       # Contains task protocol file for Delayed match to posiotions test      	
+       - DMTP       # Contains task protocol file for Delayed match to position test      	
 	    
        - CPT        # Graphical user interface for Go or NoGo
                
