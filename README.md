@@ -42,8 +42,17 @@ Download the code zip or git clone from the link https://github.com/KaetzelLab/O
 - #### pyControl    
        pyControl framework (uploaded to pyboard).
     
-- #### tasks        
-       Task definition files
+- #### tasks      
+
+       - 5CSRTT     # Contains task protocol file for 5 choice serial reaction time test
+      
+       - Ruleshift  # Contains task protocol file for rule shift      
+
+       - DNMTP      # Contains task protocol file for Delayed non-match to posiotions test      
+	    
+       - DMTP       # Contains task protocol file for Delayed match to posiotions test      	
+	    
+       - CPT        # Graphical user interface for Go or NoGo
                
 ### Controling task file using Graphical User Interface (GUI)
 Opening GUI is straight forward, if python is added to PATH Environment variables simply double clicking on file (example Run_5CSRTT.py) or open command prompt from the GUI folder (no need to add python to PATH) type ‘python Run_5CSRTT.py’ and enter.
