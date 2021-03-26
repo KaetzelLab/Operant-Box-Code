@@ -58,7 +58,7 @@ Download the code zip or git clone from the link https://github.com/KaetzelLab/O
 Opening GUI is straight forward, if python is added to PATH Environment variables simply double clicking on file (example Run_5CSRTT.py) or open command prompt from the GUI folder (no need to add python to PATH) type ‘python Run_5CSRTT.py’ and enter.
 
 
-<img src="https://github.com/KaetzelLab/Operant-Box-Code/Images and Animations/GUI_animation.gif">
+![GUI_animation](https://user-images.githubusercontent.com/71041273/112692291-fdcc9a00-8e7e-11eb-8848-56fdb4c66116.gif)
 
 #### Assuming Python is not added to PATH
 - /python Run_5CSRTT.py
