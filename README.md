@@ -34,7 +34,7 @@ Download the code zip or git clone from the link https:/github.com/KaetzelLab/Op
                Configuration files
    
 - ### data         
--              Behavioural data.   
+               Behavioural data.   
     
 - ### devices      
                pyControl hardware classes (uploaded to pyboard).
