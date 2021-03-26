@@ -72,10 +72,10 @@ Opening GUI is straight forward, if python is added to PATH Environment variable
 
 
 ### Delayed match to position test (DMTP)
-
+<img src="https://github.com/KaetzelLab/Operant-Box-Code/Images and Animations/WM_flowChart.jpg">
 
 ### Forward learning and Ruleshift (RuleShift)
-
+<img src="https://github.com/KaetzelLab/Operant-Box-Code/Images and Animations/WM_flowChart.jpg">
 
 
 To learn more about pyControl hardware, framework and create more variety task files visit and download pyControl from https://github.com/pyControl
