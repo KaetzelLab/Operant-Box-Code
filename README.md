@@ -96,13 +96,13 @@ Opening GUI is straight forward, if python is added to PATH Environment variable
 
 ### Forward learning and Ruleshift (RuleShift)
 ##### forward learning
-<img src="https://user-images.githubusercontent.com/71041273/112693770-75032d80-8e81-11eb-87fe-09ae598888cb.jpg" width="800"/>
+<img src="(https://user-images.githubusercontent.com/71041273/112697062-2789bf00-8e87-11eb-8235-190f3b580ae6.jpg" width="800"/>
 
 
 
 
 ##### 2-Choice Rule shift 
-<img src="https://user-images.githubusercontent.com/71041273/112693800-84827680-8e81-11eb-8557-6b91af9d574e.jpg" width="800"/>
+<img src="https://user-images.githubusercontent.com/71041273/112697067-28baec00-8e87-11eb-99ce-82c702ba4a9a.jpg" width="800"/>
 
 
 
