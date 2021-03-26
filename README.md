@@ -79,11 +79,11 @@ Opening GUI is straight forward, if python is added to PATH Environment variable
 
 
 ### Delayed non-match to posion test (DNMTP)
-<img src="https://github.com/KaetzelLab/Operant-Box-Code/Images and Animations/WM_flowChart.jpg">
+<img src="https://user-images.githubusercontent.com/71041273/112693334-bf37df00-8e80-11eb-808b-83b1ce577970.jpg">
 
 
 ### Delayed match to position test (DMTP)
-<img src="https://github.com/KaetzelLab/Operant-Box-Code/Images and Animations/WM_flowChart.jpg">
+<img src="https://user-images.githubusercontent.com/71041273/112693471-f9a17c00-8e80-11eb-95a1-c2a62427503c.jpg">
 
 ### Forward learning and Ruleshift (RuleShift)
 <img src="https://github.com/KaetzelLab/Operant-Box-Code/Images and Animations/WM_flowChart.jpg">
