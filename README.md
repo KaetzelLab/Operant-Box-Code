@@ -13,7 +13,7 @@ pyqtgraph
 
 pyserial
 
-Download the code zip or git clone from the link https:/github.com/KaetzelLab/Operant-Box-Code. After Downloading Operant-Box-Code, task folder has multiple subfolders which contains specific task files and desired task files should move to main task folder (only task files in main task folders are visible from task drop menu in the GUI)
+Download the code zip or git clone from the link https://github.com/KaetzelLab/Operant-Box-Code. After Downloading Code, move required task files from tak sub-folder (contains specific task files) to main task folder. GUI drop-slect-menu shows tasks only from main task folder.
 ## Operant-Box-Code
 - #### gui  
        - GUI_Final.ui      # Qt Graphical user interface file 
@@ -50,5 +50,18 @@ Opening GUI is straight forward, if python is added to PATH Environment variable
 
 
 <img src="https://github.com/KaetzelLab/Operant-Box-Code/Images and Animations/GUI_animation.gif">
+
+
+To learn more about pyControl hardware, framework and create more variety task files visit and download pyControl from https://github.com/pyControl
+
+### Contributors
+#### pyControl framework
+
+- Thomas Akam  - thomas.akam@psy.ox.ac.uk 
+#### pyOS5 GUI, task files and Operant box system
+
+- Sampath Kumar  - sampath.kapanaiah@uni-ulm.de
+- Dennis Kaetzel - dennis.kaetzel@uni-ulm.de
+
 
     
