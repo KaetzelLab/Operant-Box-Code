@@ -60,7 +60,6 @@ Opening GUI is straight forward, if python is added to PATH Environment variable
 
 <img src="https://user-images.githubusercontent.com/71041273/112695379-3cb11e80-8e84-11eb-803f-27d213d97d6c.gif" width="800"/>
 
-#### Assuming Python is not added to PATH
 - /python Run_5CSRTT.py
 - Select the setup and connect all or connect individual box by clicking connect
 - Click Config_all or config to upload frame work and hardware definition both files are located in config folder. For instance, assuming that all the hardware setups are similar to pyOS5 then press hardware definition and select “pyOS5_HardwareDefinition.py”.
