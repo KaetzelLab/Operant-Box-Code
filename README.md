@@ -61,7 +61,7 @@ Opening GUI is straight forward, if python is added to PATH Environment variable
 <img src="https://github.com/KaetzelLab/Operant-Box-Code/Images and Animations/GUI_animation.gif">
 
 #### Assuming Python is not added to PATH
-- ---/python Run_5CSRTT.py
+- /python Run_5CSRTT.py
 - Select the setup and connect all or connect individual box by clicking connect
 - Click Config_all or config to upload frame work and hardware definition both files are located in config folder. For instance, assuming that all the hardware setups are similar to pyOS5 then press hardware definition and select “pyOS5_HardwareDefinition.py”.
 - Select task file from the drop menu and upload, User can upload different task files to different box in same GUI individually or can Upload same task file to all connected box from common drop menu located at bottom left of the GUI.
@@ -94,11 +94,12 @@ Opening GUI is straight forward, if python is added to PATH Environment variable
 To learn more about pyControl hardware, framework and create more variety task files visit and download pyControl from https://github.com/pyControl
 
 ### Contributors
-#### pyControl
-- Thomas Akam  - thomas.akam@psy.ox.ac.uk 
 #### pyOS5 GUI, task files and Operant box system
 - Sampath Kumar  - sampath.kapanaiah@uni-ulm.de
 - Dennis Kaetzel - dennis.kaetzel@uni-ulm.de
+#### pyControl
+- Thomas Akam  - thomas.akam@psy.ox.ac.uk 
+
 
 ### Citations
 - Teutsch, J. & Kätzel, D. Operant Assessment of DMTP Spatial Working Memory in Mice. Front. Behav. Neurosci. 13, (2019).
