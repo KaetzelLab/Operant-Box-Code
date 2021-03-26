@@ -1,16 +1,10 @@
 # Getting started with pyOS5
 ## Requirements
-
 python =< 3.6
-
 numpy
-
 pandas
-
 PyQt5
-
 pyqtgraph
-
 pyserial
 
 Download the code zip or git clone from the link https:/github.com/KaetzelLab/Operant-Box-Code. After Downloading Operant-Box-Code, task folder has multiple subfolders which contains specific task files and desired task files should move to main task folder (only task files in main task folders are visible from task drop menu in the GUI)
