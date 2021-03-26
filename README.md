@@ -114,7 +114,7 @@ To learn more about pyControl hardware, framework and create more variety task f
 ### Contributors
 #### Operant box system
 - Dennis Kaetzel - dennis.kaetzel@uni-ulm.de
-- #### pyControl
+#### pyControl
 - Thomas Akam  - thomas.akam@psy.ox.ac.uk 
 #### pyOS5 GUI, task files
 - Sampath Kumar  - sampath.kapanaiah@uni-ulm.de
