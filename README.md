@@ -73,20 +73,38 @@ Opening GUI is straight forward, if python is added to PATH Environment variable
 
 
 ## Task Protocols
+
 ### 5-Choice Serial Reaction Time Test (5CSRTT)
-<img src="https://user-images.githubusercontent.com/71041273/112692560-72073d80-8e7f-11eb-863c-db57f6ed7e54.gif" width="500"/>
+<img src="https://user-images.githubusercontent.com/71041273/112692560-72073d80-8e7f-11eb-863c-db57f6ed7e54.gif" width="400"/>
 
 
 
-### Delayed non-match to posion test (DNMTP)
-<img src="https://user-images.githubusercontent.com/71041273/112693334-bf37df00-8e80-11eb-808b-83b1ce577970.jpg">
+
+
+
+
+
+### Delayed non-match to position test (DNMTP)
+<img src="https://user-images.githubusercontent.com/71041273/112693334-bf37df00-8e80-11eb-808b-83b1ce577970.jpg" width="800"/>
+
+
+
+
 
 
 ### Delayed match to position test (DMTP)
-<img src="https://user-images.githubusercontent.com/71041273/112693471-f9a17c00-8e80-11eb-95a1-c2a62427503c.jpg">
+<img src="https://user-images.githubusercontent.com/71041273/112693471-f9a17c00-8e80-11eb-95a1-c2a62427503c.jpg" width="800"/>
 
 ### Forward learning and Ruleshift (RuleShift)
-<img src="https://github.com/KaetzelLab/Operant-Box-Code/Images and Animations/WM_flowChart.jpg">
+##### forward learning
+<img src="https://user-images.githubusercontent.com/71041273/112693770-75032d80-8e81-11eb-87fe-09ae598888cb.jpg" width="800"/>
+
+
+
+
+##### Rule shift 
+<img src="https://user-images.githubusercontent.com/71041273/112693800-84827680-8e81-11eb-8557-6b91af9d574e.jpg" width="800"/>
+
 
 
 
