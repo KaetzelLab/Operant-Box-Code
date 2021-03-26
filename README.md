@@ -81,11 +81,9 @@ Opening GUI is straight forward, if python is added to PATH Environment variable
 To learn more about pyControl hardware, framework and create more variety task files visit and download pyControl from https://github.com/pyControl
 
 ### Contributors
-#### pyControl framework
-
+#### pyControl
 - Thomas Akam  - thomas.akam@psy.ox.ac.uk 
 #### pyOS5 GUI, task files and Operant box system
-
 - Sampath Kumar  - sampath.kapanaiah@uni-ulm.de
 - Dennis Kaetzel - dennis.kaetzel@uni-ulm.de
 
