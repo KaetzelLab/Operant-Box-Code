@@ -13,7 +13,7 @@ pyqtgraph
 
 pyserial
 
-Download the code zip or git clone from the link https://github.com/KaetzelLab/Operant-Box-Code. After Downloading Code, move required task files from tak sub-folder (contains specific task files) to main task folder. GUI drop-slect-menu shows tasks only from main task folder.
+Download the code zip or git clone from the link https://github.com/KaetzelLab/Operant-Box-Code. After Downloading Code, move required task files from task sub-folder (contains specific task files) to main task folder. GUI drop-slect-menu shows tasks only from main task folder.
 ## Operant-Box-Code
 - #### gui  
        - GUI_Final.ui      # Qt Graphical user interface file 
