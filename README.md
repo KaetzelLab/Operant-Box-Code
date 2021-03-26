@@ -58,7 +58,7 @@ Download the code zip or git clone from the link https://github.com/KaetzelLab/O
 Opening GUI is straight forward, if python is added to PATH Environment variables simply double clicking on file (example Run_5CSRTT.py) or open command prompt from the GUI folder (no need to add python to PATH) type ‘python Run_5CSRTT.py’ and enter.
 
 
-<img src="https://user-images.githubusercontent.com/71041273/112694554-df689d80-8e82-11eb-9849-00e1f3e5b596.gif" width="800"/>
+<img src="https://user-images.githubusercontent.com/71041273/112695379-3cb11e80-8e84-11eb-803f-27d213d97d6c.gif" width="800"/>
 
 #### Assuming Python is not added to PATH
 - /python Run_5CSRTT.py
