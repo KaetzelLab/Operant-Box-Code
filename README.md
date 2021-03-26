@@ -1,7 +1,7 @@
 # Getting started with pyOS5
 ## Requirements
 
-python =< 3.6
+python- 3.6
 
 numpy
 
