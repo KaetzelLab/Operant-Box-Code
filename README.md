@@ -64,7 +64,7 @@ Opening GUI is straight forward, if python is added to PATH Environment variable
 - Select the setup and connect all or connect individual box by clicking connect
 - Click Config_all or config to upload frame work and hardware definition both files are located in config folder. For instance, assuming that all the hardware setups are similar to pyOS5 then press hardware definition and select “pyOS5_HardwareDefinition.py”.
 - Select task file from the drop menu and upload, User can upload different task files to different box in same GUI individually or can Upload same task file to all connected box from common drop menu located at bottom left of the GUI.
-- Typing experiment name, project and session are optional but subject id is important to store and save individual csv files (contains all events and timestamps), If you entered subject id, start button will turn to Record. One ca change variables from the GUI by clicking variable button before Start/Record.
+- Typing experiment name, project and session are optional but subject id is important to store and save individual csv files (contains all events and timestamps), If you entered subject id, start button will turn to Record. One can change variables from the GUI by clicking variable button before Start/Record.
 - Once experiment is done, export data and reset data table by clicking Reset table.
 - If you are using multiple boxes it is more convenient to add com numbers to port_list.py file to specific box order and later, it can be called by clicking setup button. Can be store 24 box com list.
 
