@@ -66,7 +66,7 @@ Opening GUI is straight forward, if python is added to PATH Environment variable
 - Select task file from the drop menu and upload, User can upload different task files to different box in same GUI individually or can Upload same task file to all connected box from common drop menu located at bottom left of the GUI.
 - Typing experiment name, project and session are optional but subject id is important to store and save individual csv files (contains all events and timestamps), If you entered subject id, start button will turn to Record. One can change variables from the GUI by clicking variable button before Start/Record.
 - Once experiment is done, export data and reset data table by clicking Reset table.
-- If you are using multiple boxes it is more convenient to add com numbers to port_list.py file to specific box order and later, it can be called by clicking setup button. This Can store upto for 24 box-com list.
+- If you are using multiple boxes it is more convenient to add com numbers to port_list.py file to specific box order and later, it can be called by clicking setup button. This can store upto 24 com serial numbers.
 
 
 
