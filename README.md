@@ -83,7 +83,7 @@ Opening GUI is straight forward, if python is added to PATH Environment variable
 
 
 
-### Delayed non-match to position test (DNMTP)
+### 5-Choice Delayed non-match to position test (DNMTP)
 <img src="https://user-images.githubusercontent.com/71041273/112693334-bf37df00-8e80-11eb-808b-83b1ce577970.jpg" width="800"/>
 
 
@@ -91,7 +91,7 @@ Opening GUI is straight forward, if python is added to PATH Environment variable
 
 
 
-### Delayed match to position test (DMTP)
+### 2-Choice Delayed match to position test (DMTP)
 <img src="https://user-images.githubusercontent.com/71041273/112693471-f9a17c00-8e80-11eb-95a1-c2a62427503c.jpg" width="800"/>
 
 ### Forward learning and Ruleshift (RuleShift)
@@ -101,7 +101,7 @@ Opening GUI is straight forward, if python is added to PATH Environment variable
 
 
 
-##### Rule shift 
+##### 2-Choice Rule shift 
 <img src="https://user-images.githubusercontent.com/71041273/112693800-84827680-8e81-11eb-8557-6b91af9d574e.jpg" width="800"/>
 
 
