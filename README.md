@@ -74,6 +74,7 @@ Opening GUI is straight forward, if python is added to PATH Environment variable
 
 ## Task Protocols
 ### 5-Choice Serial Reaction Time Test (5CSRTT)
+![5CSRTT_Final_anim](https://user-images.githubusercontent.com/71041273/112692560-72073d80-8e7f-11eb-863c-db57f6ed7e54.gif)
 
 
 
