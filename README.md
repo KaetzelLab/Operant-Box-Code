@@ -79,7 +79,7 @@ Opening GUI is straight forward, if python is added to PATH Environment variable
 ### 5-Choice Serial Reaction Time Test (5CSRTT)
 
 <p align="center" width="100%">
-    <img src="https://user-images.githubusercontent.com/71041273/112692560-72073d80-8e7f-11eb-863c-db57f6ed7e54.gif" width="400"/> 
+    <img src="https://user-images.githubusercontent.com/71041273/112722935-775e9980-8f0c-11eb-8351-2931762a965a.gif" width="400"/> 
 </p>
 
 
@@ -109,7 +109,7 @@ Opening GUI is straight forward, if python is added to PATH Environment variable
 
 
 ##### 2-Choice Rule shift 
-<img src="https://user-images.githubusercontent.com/71041273/112697067-28baec00-8e87-11eb-99ce-82c702ba4a9a.jpg" width="800"/>
+<img src="https://user-images.githubusercontent.com/71041273/112722977-a543de00-8f0c-11eb-8bf8-9e49a6c26180.jpg" width="800"/>
 
 
 
