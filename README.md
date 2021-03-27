@@ -16,6 +16,7 @@ pyserial
 Download the code zip or git clone from the link https://github.com/KaetzelLab/Operant-Box-Code. After Downloading Code, move required task files from task sub-folder (contains specific task files) to main task folder. GUI dropBox-menu shows task files only from main task folder.
 ## Operant-Box-Code
 - #### gui  
+
        - GUI_Final.ui      # Qt Graphical user interface file 
        
        - Run_5CSRTT.py     # Graphical user interface for 5-choice serial reaction time test
@@ -55,7 +56,7 @@ Download the code zip or git clone from the link https://github.com/KaetzelLab/O
        - CPT        # Graphical user interface for Go or NoGo
                
 ### Controling task file using Graphical User Interface (GUI)
-Opening GUI is straight forward, if python is added to PATH Environment variables simply double clicking on file (example Run_5CSRTT.py) or open command prompt from the GUI folder type <u>python Run_5CSRTT.py</u> and enter.
+Opening GUI is straight forward, if python is added to PATH Environment variables simply double clicking on file, for example double click on "Run_5CSRTT.py" or open command prompt from the GUI folder type "python Run_5CSRTT.py" and enter.
 
 
 <img src="https://user-images.githubusercontent.com/71041273/112695379-3cb11e80-8e84-11eb-803f-27d213d97d6c.gif" width="800"/>
