@@ -58,7 +58,7 @@ Download the code zip or git clone from the link https://github.com/KaetzelLab/O
 ### Controling task file using Graphical User Interface (GUI)
 Opening GUI is straight forward, if python is added to PATH Environment variables simply double clicking on file, for example double click on "Run_5CSRTT.py" or open command prompt from the GUI folder type "python Run_5CSRTT.py" and enter.
 
-<p align="center" width="100%">
+<p align="left" width="100%">
     <img src="https://user-images.githubusercontent.com/71041273/112695379-3cb11e80-8e84-11eb-803f-27d213d97d6c.gif" width="800"/>
 </p>
 
