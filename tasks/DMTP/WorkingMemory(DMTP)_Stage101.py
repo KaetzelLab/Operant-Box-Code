@@ -135,7 +135,7 @@ def sample_state(event):
 # Delay before reward
 def pre_reward_delay(event):
     if event == "entry":
-        print("post_reward_delay")
+        print("pre_reward_delay")
         timed_goto_state('sp_reward', v.pre_delay_dur)
     elif event == 'poke_1' and v.sp_target == 1\
             or event == 'poke_2' and v.sp_target == 2\
